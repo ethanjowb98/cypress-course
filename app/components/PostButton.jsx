@@ -13,7 +13,7 @@ export default function PostButton(){
     }
 
     return (
-        <Button onClick={handleClick}>
+        <Button data-test="post-btn" onClick={handleClick}>
             Post Data
         </Button>
     )
