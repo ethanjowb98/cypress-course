@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: cypress/browsers:node-20.11.0-chrome-124-ff-124-edge-124
+      image: cypress/browsers:latest
 
     steps:
       - name: Checkout repository
