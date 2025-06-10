@@ -10,7 +10,7 @@
     "test:ci": "start-server-and-test dev http://localhost:3000 cy:run",
     "cy:run": "cypress run --browser chrome",
     "merge:reports": "mochawesome-merge cypress/reports/*.json > mochawesome.json",
-    "generate:html": "marge mochawesome.json --reportDir mochawesome-report --reportTitle='Cypress Test Report'",
+    "generate:html": "marge mochawesome.json --reportDir mochawesome-report --reportTitle='Cypress Test Report' && mv mochawesome-report/mochawesome.html mochawesome-report/index.html",
     "report:html": "npm run merge:reports && npm run generate:html"
   },
   "dependencies": {
