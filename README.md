@@ -84,7 +84,7 @@ Access the latest Cypress HTML test report at:
 
 Make sure your `package.json` includes the following scripts:
 
-\`\`\`json
+```json
 "scripts": {
   "dev": "next dev",
   "build": "next build",
@@ -93,7 +93,7 @@ Make sure your `package.json` includes the following scripts:
   "test:ci": "start-server-and-test dev http://localhost:3000 'cypress run --browser chrome'",
   "report:html": "mochawesome-merge cypress/results/*.json > mochawesome.json && marge mochawesome.json --reportDir mochawesome-report --inline"
 }
-\`\`\`
+```
 
 ---
 
